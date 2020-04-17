@@ -1,4 +1,4 @@
-# DemaRQ (Version 1.1) #
+# DemaRQ (Version 1.0) #
 DemaRQ: Demarcator for ReQuirements
 
 ## Story behind it: ##
