@@ -8,10 +8,10 @@ Motivated by the need for demarcating requirements in requirements specification
 
 In a nutshell, DemaRQ works by first parsing a requirements specification. The tool then computes, hrough a basic Natural Language Processing (NLP) pipeline, a set of features for each sentence in the requirements specification. The features are in four categories: token-based features capture the token-level information, syntactic features are derived syntax-related information, semantic features are about the semantic categories of the verbs and frequency-based features alighn the sentence-level to the document-level information. The computed features are aggregated in a feature matrix that represents the input requirements specifications. Finally, the tool applies a pre-trained model to classify the sentences in the input requirements specification given by the feature matrix into REQUIREMENT and NONREQUIREMENT. The resulting classification, in a file format, is the output of the tool. 
 
-## System Requirements: ##
+## System requirements: ##
 Java 1.7 (or [higher](https://www.oracle.com/java/technologies/javase-jre8-downloads.html))
 
-## Specific Details about the tool:
+## Specific details about the tool:
 - The tool takes as an input a requirements specification with the extension: ".docx"
 - The tool produces the results file: "predictions.res", which contains the predicted class next to each sentence in the input requirements specification. The class can be REQUIREMENT or NONREQUIREMENT.
 - By default, the tool uses a pre-trained model that is the best model reported in the paper described below (Abualhaija et al., 2019) corresponding to the random forest classifier with cost-sensitive learning.
