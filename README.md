@@ -39,4 +39,5 @@ To evaluate the results that are produced by the tool in the file "prediction.re
 
 ## How to cite
 - People who wish to use or compare with DemaRQ in their publications can cite the following paper: 
+
 [Abualhaija, S., Arora, C., Sabetzadeh, M., Briand, L. C., & Vaz, E. (2019, September). A Machine Learning-Based Approach for Demarcating Requirements in Textual Specifications. In 2019 IEEE 27th International Requirements Engineering Conference (RE) (pp. 51-62). IEEE.](https://orbilu.uni.lu/bitstream/10993/39889/1/AASBV_RE19_AuthorPreprint.pdf)
