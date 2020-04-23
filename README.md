@@ -2,11 +2,11 @@
 DemaRQ: Demarcator for ReQuirements
 
 ## Story behind it: ##
-Requirements demarcation is a simple but important task during the analysis of a textual requirements specification. The task is essentially to determine which statements in the specification represent requirements. Following suitable writing and markup conventions does not guarantee an immediate and unequivocal demarcation since neither the presence nor a fully accurate enforcement of such conventions. Resorting to after-the-fact reviews for sifting requirements from other material in a requirements specification by the analyst is both tedious and time-consuming. 
+Requirements demarcation is a simple but important task during the analysis of a textual requirements specification. The task is essentially to determine which statements in the specification represent requirements. Following suitable writing and markup conventions does not guarantee immediate and unequivocal demarcation, since neither the presence nor a fully accurate enforcement of such conventions can be taken for granted. Resorting to after-the-fact reviews for sifting requirements from other material in a requirements specification is both tedious and time-consuming. 
 
-Motivated by the need for demarcating requirements in requirements specifications irrespective of domain, terminology or style, we present a novel tool named DemaRQ (Demarcator for ReQuirements) for demarcating requirements in free-form requirements specifications. DemaRQ is a ML-based tool that utilizes generic language features.
+Motivated by the need for demarcating requirements in requirements specifications irrespective of domain, terminology or style, we present a novel tool, DemaRQ (Demarcator for ReQuirements), for demarcating requirements in free-form requirements specifications. DemaRQ is based on Machine Learning (ML). The ML classifier in DemaRQ is a Random Forest  model with Cost-sensitive Learning. This classifier has been trained over 16161 manually labeled statements from 26 requirements specifications (written in natural language) using different styles and covering diverse domains. 
 
-In a nutshell, DemaRQ works by first parsing a requirements specification. The tool then computes, hrough a basic Natural Language Processing (NLP) pipeline, a set of features for each sentence in the requirements specification. The features are in four categories: token-based features capture the token-level information, syntactic features are derived syntax-related information, semantic features are about the semantic categories of the verbs and frequency-based features alighn the sentence-level to the document-level information. The computed features are aggregated in a feature matrix that represents the input requirements specifications. Finally, the tool applies a pre-trained model to classify the sentences in the input requirements specification given by the feature matrix into REQUIREMENT and NONREQUIREMENT. The resulting classification, in a file format, is the output of the tool. 
+DemaRQ works by first parsing a requirements specification using Natural Language Processing (NLP). The tool then computes, based on the NLP results, a set of features for each sentence in the requirements specification. The features fall under four categories: token-based features capture the token-level information, syntactic features are derived syntax-related information, semantic features are about the semantic categories of the verbs, and frequency-based features characterize sentences based on document-level information. The computed features are aggregated in a feature matrix. DemaRQ then applies its pre-trained model for classifying each sentence in the input requirements specification as a REQUIREMENT or a NON-REQUIREMENT.
 
 ## System requirements: ##
 Java 1.7 (or [higher](https://www.oracle.com/java/technologies/javase-jre8-downloads.html))
@@ -38,6 +38,6 @@ To evaluate the results that are produced by the tool in the file "prediction.re
 
 
 ## How to cite
-- People who wish to use or compare with DemaRQ in their publications can cite the following paper: 
+- If you wish to use or compare with DemaRQ, please cite the following paper: 
 
 [Abualhaija, S., Arora, C., Sabetzadeh, M., Briand, L. C., & Vaz, E. (2019, September). A Machine Learning-Based Approach for Demarcating Requirements in Textual Specifications. In 2019 IEEE 27th International Requirements Engineering Conference (RE) (pp. 51-62). IEEE.](https://orbilu.uni.lu/bitstream/10993/39889/1/AASBV_RE19_AuthorPreprint.pdf)
