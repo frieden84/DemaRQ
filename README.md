@@ -36,6 +36,8 @@ To evaluate the results that are produced by the tool in the file "prediction.re
 3. Use the following command: 
 ```python evaluate.py```
 
+## hh
+[![DOI](https://zenodo.org/badge/256534724.svg)](https://zenodo.org/badge/latestdoi/256534724)
 
 ## How to cite
 - If you wish to use or compare with DemaRQ, please cite the following paper: 
