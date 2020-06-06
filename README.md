@@ -1,6 +1,5 @@
-# DemaRQ (Version 1.0) #
+# DemaRQ (Version 1.0) # [![DOI](https://zenodo.org/badge/256534724.svg)](https://zenodo.org/badge/latestdoi/256534724)
 DemaRQ: Demarcator for ReQuirements
-[![DOI](https://zenodo.org/badge/256534724.svg)](https://zenodo.org/badge/latestdoi/256534724)
 
 ## Story behind it: ##
 Requirements demarcation is a simple but important task during the analysis of a textual requirements specification. The task is essentially to determine which statements in the specification represent requirements. Following suitable writing and markup conventions does not guarantee immediate and unequivocal demarcation, since neither the presence nor a fully accurate enforcement of such conventions can be taken for granted. Resorting to after-the-fact reviews for sifting requirements from other material in a requirements specification is both tedious and time-consuming. 
