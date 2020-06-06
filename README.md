@@ -1,14 +1,14 @@
 # DemaRQ (Version 1.0) [![DOI](https://zenodo.org/badge/256534724.svg)](https://zenodo.org/badge/latestdoi/256534724)
 DemaRQ: Demarcator for ReQuirements
 
-## Story behind it: ##
+## Story behind it: 
 Requirements demarcation is a simple but important task during the analysis of a textual requirements specification. The task is essentially to determine which statements in the specification represent requirements. Following suitable writing and markup conventions does not guarantee immediate and unequivocal demarcation, since neither the presence nor a fully accurate enforcement of such conventions can be taken for granted. Resorting to after-the-fact reviews for sifting requirements from other material in a requirements specification is both tedious and time-consuming. 
 
 Motivated by the need for demarcating requirements in requirements specifications irrespective of domain, terminology or style, we present a novel tool, DemaRQ (Demarcator for ReQuirements), for demarcating requirements in free-form requirements specifications. DemaRQ is based on Machine Learning (ML). The ML classifier in DemaRQ is a Random Forest  model with Cost-sensitive Learning. This classifier has been trained over 16161 manually labeled statements from 26 requirements specifications (written in natural language) using different styles and covering diverse domains. 
 
 DemaRQ works by first parsing a requirements specification using Natural Language Processing (NLP). The tool then computes, based on the NLP results, a set of features for each sentence in the requirements specification. The features fall under four categories: token-based features capture the token-level information, syntactic features are derived syntax-related information, semantic features are about the semantic categories of the verbs, and frequency-based features characterize sentences based on document-level information. The computed features are aggregated in a feature matrix. DemaRQ then applies its pre-trained model for classifying each sentence in the input requirements specification as a REQUIREMENT or a NON-REQUIREMENT.
 
-## System requirements: ##
+## System requirements: 
 Java 1.7 (or [higher](https://www.oracle.com/java/technologies/javase-jre8-downloads.html))
 
 ## Specific details about the tool:
@@ -17,7 +17,7 @@ Java 1.7 (or [higher](https://www.oracle.com/java/technologies/javase-jre8-downl
 - By default, the tool uses a pre-trained model that is the best model reported in the paper described below (Abualhaija et al., 2019) corresponding to the random forest classifier with cost-sensitive learning.
 - The "gold.txt" is the corresponding ground truth to the input requirements specification and should contain only the requirements as per human annotation, where each requirement is on a separate line. 
   
-## Usage instructions: ##
+## Usage instructions: 
 
 To run the DemaRQ tool, refer to the following instructions:
 
@@ -29,7 +29,7 @@ To run the DemaRQ tool, refer to the following instructions:
 following command: 
 ```java -jar DemaRQ.jar -document newDocument.docx```
 
-### Using the evaluator: ###
+### Using the evaluator: 
 To evaluate the results that are produced by the tool in the file "prediction.res", refer the follwing steps:
 1. Replace the file "gold.txt" with the ground truth of the corresponding processed requirements specification, for which the results are in the output file "prediction.res".
 2. Open a terminal and go to the *root_dir*. 
