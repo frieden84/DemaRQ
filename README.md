@@ -1,5 +1,4 @@
-# DemaRQ (Version 1.0) # 
-[![DOI](https://zenodo.org/badge/256534724.svg)](https://zenodo.org/badge/latestdoi/256534724)
+# DemaRQ (Version 1.0) [![DOI](https://zenodo.org/badge/256534724.svg)](https://zenodo.org/badge/latestdoi/256534724)
 DemaRQ: Demarcator for ReQuirements
 
 ## Story behind it: ##
